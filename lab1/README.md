@@ -1,6 +1,6 @@
 
 ## Aplikacja udostępiona jest pod następującym linkiem
-[https://blog21164po.azurewebsites.net] https://blog21164po.azurewebsites.net/
+https://blog21164po.azurewebsites.net/
 
 ### Widok wszystkich postów przy niezalogowanym użytkowniku
 ![nua](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/tree/main/lab1/assets/PrzegladPostowNiezalogowany.png)
