@@ -16,7 +16,7 @@ https://blog21164po.azurewebsites.net/
 Pokazane są wszystkie posty łącznie z tymi które jeszcze nie zostały opublikowane. Podane są linki do dodawania, edytowania i usuwanie postów.
 
 ### Widok edycji postu
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab1/assets/EdytowaniePostow.png)
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/tree/main/lab1/assets/EdytowaniePostow.png)
 
 ### Widok tworzenia postów
 ![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/tree/main/lab1/assets/TworzeniePostow.png)
