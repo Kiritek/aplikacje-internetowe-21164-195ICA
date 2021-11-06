@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,23 +19,35 @@ namespace Blog.Models
 
         public void AddPost(Post post)
         {
-            _appDbContext.Add(post);
+            _appDbContext.Posts.Add(post);
             _appDbContext.SaveChanges();
         }
 
-        public Post GetPostById(int id)
+        public Post GetPostById(int? id)
         {
             return _appDbContext.Posts.FirstOrDefault(p => p.Id == id);
         }
 
         public void RemovePost(int id)
         {
-            throw new NotImplementedException();
+            var post = _appDbContext.Posts.Find(id);
+            _appDbContext.Posts.Remove(post);
+            _appDbContext.SaveChanges();
         }
 
         public void EditPost(Post post)
         {
-            throw new NotImplementedException();
+            var entry = _appDbContext.Posts.Find(2);
+            entry.Author = post.Author;
+            entry.Category = post.Category;
+            entry.IsHighlighted = post.IsHighlighted;
+            entry.PostDate = post.PostDate;
+            entry.PostPublishDate = post.PostDate;
+            entry.PostShortDescritpion = post.PostShortDescritpion;
+            entry.PostLongDescription = post.PostLongDescription;
+            entry.Score = post.Score;
+         
+            _appDbContext.SaveChanges();
         }
     }
 }

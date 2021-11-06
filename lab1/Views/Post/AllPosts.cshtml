@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Post>
+
+@{
+    ViewData["Title"] = "AllPosts";
+}
+
+<h1>AllPosts</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostPublishDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostShortDescritpion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Score)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostPublishDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostShortDescritpion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Score)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "PostDetails", new { id=item.Id }) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -11,7 +11,6 @@ namespace Blog.Models
     {
         [BindNever]
         public int Id { get; set; }
-        [Required(ErrorMessage ="Please enter your name")]
         public string Author { get; set; }
         [Required(ErrorMessage ="Please enter publish date")]
         public DateTime PostPublishDate { get; set; }
