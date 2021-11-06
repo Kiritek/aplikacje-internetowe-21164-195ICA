@@ -12,7 +12,7 @@ https://blog21164po.azurewebsites.net/
 ![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/tree/main/lab1/assets/WidokLogowania.png)
 
 ### Widok wszystkich postów przy zalogowanym użytkowniku
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/tree/main/lab1/assets/PrzegladPostowZalogowany.png)
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/7e9074d98e7f15dc0b81de6884e7c2bd36eec8d4/lab1/assets/PrzegladPostowZalogowany.png)
 Pokazane są wszystkie posty łącznie z tymi które jeszcze nie zostały opublikowane. Podane są linki do dodawania, edytowania i usuwanie postów.
 
 ### Widok edycji postu
