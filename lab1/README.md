@@ -3,7 +3,7 @@
 https://blog21164po.azurewebsites.net/
 
 ### Widok wszystkich postów przy niezalogowanym użytkowniku
-![nua](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/lab1/assets/PrzegladPostowNiezalogowany.png?raw=true)
+![nua](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/lab1/assets/PrzegladPostowNiezalogowany.png?raw=true)"."
 
 ### Widok szczegółów postu przy niezalogowanym użytkowniku
 ![nus](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/lab1/assets/SzczegolyPostowNiezalogowany.png?raw=true)
