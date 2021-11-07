@@ -3,23 +3,24 @@
 https://blog21164po.azurewebsites.net/
 
 ### Widok wszystkich postów przy niezalogowanym użytkowniku
-![nua](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/76cc6aa52760752e2981cecaec91b05f8e1829df/lab1/assets/PrzegladPostowNiezalogowany.png)
+![nua](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/lab1/assets/PrzegladPostowNiezalogowany.png)
 
 ### Widok szczegółów postu przy niezalogowanym użytkowniku
-![nus](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/76cc6aa52760752e2981cecaec91b05f8e1829df/lab1/assets/SzczegolyPostowNiezalogowany.png)
+![nus](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/lab1/assets/SzczegolyPostowNiezalogowany.png)
+
 
 ### Widok logowania
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/76cc6aa52760752e2981cecaec91b05f8e1829df/lab1/assets/WidokLogowania.png)
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/lab1/assets/WidokLogowania.png)
 
 ### Widok wszystkich postów przy zalogowanym użytkowniku
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/7e9074d98e7f15dc0b81de6884e7c2bd36eec8d4/lab1/assets/PrzegladPostowZalogowany.png)
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/lab1/assets/PrzegladPostowZalogowany.png)
 Pokazane są wszystkie posty łącznie z tymi które jeszcze nie zostały opublikowane. Podane są linki do dodawania, edytowania i usuwanie postów.
 
 ### Widok edycji postu
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/76cc6aa52760752e2981cecaec91b05f8e1829df/lab1/assets/EdytowaniePostow.jpg)
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/lab1/assets/EdytowaniePostow.jpg)
 
 ### Widok tworzenia postów
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/76cc6aa52760752e2981cecaec91b05f8e1829df/lab1/assets/TworzeniePostow.png)
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/lab1/assets/TworzeniePostow.png)
 
 ### Widok kasowania postów
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/76cc6aa52760752e2981cecaec91b05f8e1829df/lab1/assets/KasowaniePostow.png)
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/lab1/assets/KasowaniePostow.png)
