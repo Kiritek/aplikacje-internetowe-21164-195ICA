@@ -1,7 +1,7 @@
-# Lab 1
-
 ## Aplikacja udostępiona jest pod następującym linkiem
 https://blog21164po.azurewebsites.net/
+
+# Lab 1
 
 ### Widok wszystkich postów przy niezalogowanym użytkowniku
 ![nua](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab1/assets/images/PrzegladPostowNiezalogowany.png)
@@ -61,3 +61,21 @@ Nowa wersja widoku logowania
 ### Widok do wprowadzenia weryfikacji dwu etapowej
 
 ![wr](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab1/assets/images/WeryfikacjaDwuEtapowa.png)
+
+# Lab 3
+
+### Nowy widok logowania ze wsparciem dla logowania przy pomocy maila/nazwy użytkownika + hasła lub przy pomocy facebooka/googla.
+
+![wr](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab1/assets/images/logowanieemaillubnickname.png)
+
+### Widok logowania przy pomocy googla
+
+![wr](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab1/assets/images/logingoogle.png)
+
+### Widok logowania przy pomocy facebooka
+
+![wr](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab1/assets/images/loginfacebook.png)
+
+### Widok podłączenie logowania facebookiem/googlem do obecnego konta
+
+![wr](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab1/assets/images/powiazanie%20konta%20do%20logowania%20facebook.png)
