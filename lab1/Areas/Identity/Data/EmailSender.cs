@@ -13,9 +13,10 @@ namespace Blog.Areas.Identity.Data
         private readonly string _fromEmail;
         public EmailSender(IConfiguration config)
         {
-            _apiKey = config["SendGrid:ApiKey"];
+            _apiKey = config["SendGrid:Api"];
             _fromName = config["SendGrid:FromName"];
             _fromEmail = config["SendGrid:FromEmail"];
+
         }
         public async Task SendEmailAsync(string email, string subject, string message)
         {
