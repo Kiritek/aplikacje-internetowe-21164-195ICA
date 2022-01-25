@@ -85,7 +85,7 @@ W obydwu przykładach kończy się to tylko komunikatem nieuatoryzowany. Przed p
 ![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab46/assets/zmianyadmin.png)
 
 ### Lista postów po zmianie admina
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab46/assets/zmianyadmin2.png)
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab46/assets/zmianyadminfix.png)
 
 ### Lista postów po usunięciu postu innego użytkownika przez admina
 ![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab46/assets/usuniecieadmin.png)
