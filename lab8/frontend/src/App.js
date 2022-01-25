@@ -54,7 +54,7 @@ class App extends Component {
       axios
         .put(`/api/todos/${item.id}/`, item)
         .then((res) => this.refreshList())
-        .catch((err)=> this.ErrorNotificationHander(err));
+        .catch((err)=> this.ErrorNotificationHander(err.response.data.errors));
       return;
     }
     axios
