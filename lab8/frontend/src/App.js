@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import Modal from "./components/Modal";
 import axios from "axios";
+import PriorityHighIcon from '@mui/icons-material/PriorityHigh';
+import LowPriorityIcon from '@mui/icons-material/LowPriority';
+import CheckIcon from '@mui/icons-material/Check';
+
 
 class App extends Component {
   constructor(props) {
@@ -13,28 +17,29 @@ class App extends Component {
         title: "",
         description: "",
         completed: false,
+        priority: ""
       },
     };
   }
 
-  ErrorNotificationHander(err){
+  ErrorNotificationHander(err) {
     let notificationText = "";
-    if(err.Title!== undefined){
-      notificationText+=err.Title;
+    if (err.Title !== undefined) {
+      notificationText += err.Title;
     }
-    if(err.Description!== undefined){
-      notificationText+=err.Description;
+    if (err.Description !== undefined) {
+      notificationText += err.Description;
     }
-    if(err.TodoTitleDescription!== undefined){
-      notificationText+=err.TodoTitleDescription;
+    if (err.TodoTitleDescription !== undefined) {
+      notificationText += err.TodoTitleDescription;
     }
     new Notification(notificationText)
   }
-  
-   
+
+
   componentDidMount() {
     this.refreshList();
-      Notification.requestPermission();
+    Notification.requestPermission();
   }
 
   refreshList = () => {
@@ -44,6 +49,7 @@ class App extends Component {
       .catch((err) => console.log(err));
   };
 
+  
   toggle = () => {
     this.setState({ modal: !this.state.modal });
   };
@@ -54,13 +60,27 @@ class App extends Component {
       axios
         .put(`/api/todos/${item.id}/`, item)
         .then((res) => this.refreshList())
-        .catch((err)=> this.ErrorNotificationHander(err.response.data.errors));
+        .catch((err) => this.ErrorNotificationHander(err.response.data.errors));
       return;
     }
     axios
       .post("/api/todos/", item)
       .then((res) => this.refreshList())
-      .catch((err)=> this.ErrorNotificationHander(err.response.data.errors));
+      .catch((err) => this.ErrorNotificationHander(err.response.data.errors));
+  };
+  RenderIcon = ({ itemPriority,itemCompleted }) => {
+    if (itemCompleted){
+      return (<CheckIcon />);
+    }
+    if (itemPriority === "high") {
+      return (<PriorityHighIcon />);
+    }
+    if (itemPriority === "low") {
+      return (<LowPriorityIcon />);
+    }
+    else {
+      return null;
+    }
   };
 
   handleDelete = (item) => {
@@ -70,7 +90,8 @@ class App extends Component {
   };
 
   createItem = () => {
-    const item = { title: "", description: "", completed: false };
+
+    const item = { title: "", description: "", completed: false, priority: "" };
 
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
@@ -80,11 +101,7 @@ class App extends Component {
   };
 
   displayCompleted = (status) => {
-    if (status) {
-      return this.setState({ viewCompleted: true });
-    }
-
-    return this.setState({ viewCompleted: false });
+    this.setState({ viewCompleted: status })
   };
 
   renderTabList = () => {
@@ -105,7 +122,6 @@ class App extends Component {
       </div>
     );
   };
-
   renderItems = () => {
     const { viewCompleted } = this.state;
     const newItems = this.state.todoList.filter(
@@ -118,11 +134,14 @@ class App extends Component {
         className="list-group-item d-flex justify-content-between align-items-center"
       >
         <span
-          className={`todo-title mr-2 ${
-            this.state.viewCompleted ? "completed-todo" : ""
-          }`}
+          className={`todo-title mr-2 ${this.state.viewCompleted ? "completed-todo" : ""
+            }`}
           title={item.description}
         >
+          <this.RenderIcon
+            itemPriority={item.priority}
+            itemCompleted={item.completed}
+          />
           {item.title}
         </span>
         <span>
@@ -178,3 +197,4 @@ class App extends Component {
 }
 
 export default App;
+

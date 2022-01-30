@@ -13,6 +13,8 @@ namespace ToDoApi.Models
         public string Description { get; set; }
         [Required]
         public bool Completed { get; set; } = false;
+        [Required]
+        public string Priority { get; set; } = "low";
 
     }
 }

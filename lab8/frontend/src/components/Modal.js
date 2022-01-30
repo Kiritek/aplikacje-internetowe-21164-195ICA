@@ -25,9 +25,7 @@ export default class CustomModal extends Component {
     if (e.target.type === "checkbox") {
       value = e.target.checked;
     }
-
     const activeItem = { ...this.state.activeItem, [name]: value };
-
     this.setState({ activeItem });
   };
 
@@ -61,6 +59,17 @@ export default class CustomModal extends Component {
                 placeholder="Enter Todo description"
               />
             </FormGroup>
+            <FormGroup>
+              <Label for="todo-description">Priority</Label>
+              <Input
+                type="text"
+                id="todo-priority"
+                name="priority"
+                value={this.state.activeItem.priority}
+                onChange={this.handleChange}
+                placeholder="Enter low,medium or high"
+              />
+            </FormGroup>
             <FormGroup check>
               <Label check>
                 <Input
@@ -72,6 +81,7 @@ export default class CustomModal extends Component {
                 Completed
               </Label>
             </FormGroup>
+
           </Form>
         </ModalBody>
         <ModalFooter>
