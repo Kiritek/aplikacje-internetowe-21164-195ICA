@@ -25,8 +25,8 @@ class TutorialDataService {
     return http.delete(`/TutorialsController`);
   }
 
-  findByTitle(title) {
-    return http.get(`/TutorialsController?name=${title}`);
+  findByTitle(title,category) {
+    return http.get(`/TutorialsController?name=${title}&category=${category}`);
   }
 }
 

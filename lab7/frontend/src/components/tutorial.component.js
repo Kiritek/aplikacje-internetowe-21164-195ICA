@@ -78,6 +78,7 @@ export default class Tutorial extends Component {
   }
 
   updatePublished(status) {
+  
     var data = {
       id: this.state.currentTutorial.id,
       title: this.state.currentTutorial.title,

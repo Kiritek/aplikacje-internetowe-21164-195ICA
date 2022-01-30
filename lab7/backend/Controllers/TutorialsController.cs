@@ -21,9 +21,9 @@ namespace CRUD_API2.Controllers
 
         [HttpGet]
         public ActionResult<IEnumerable<TutorialDto>> GetAllWithQuery(
-            [FromQuery] string name)
+            [FromQuery] string name,string category)
         {
-            var tutorialListFromRepo = _tutorialRepository.GetSearch(name);
+            var tutorialListFromRepo = _tutorialRepository.GetSearch(name,category);
 
             return Ok(_mapper.Map<IEnumerable<TutorialDto>>(tutorialListFromRepo));
         }

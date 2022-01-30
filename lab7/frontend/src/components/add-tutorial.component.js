@@ -4,8 +4,6 @@ import TutorialDataService from "../services/tutorial.service";
 export default class AddTutorial extends Component {
   constructor(props) {
     super(props);
-    this.onChangeTitle = this.onChangeTitle.bind(this);
-    this.onChangeDescription = this.onChangeDescription.bind(this);
     this.saveTutorial = this.saveTutorial.bind(this);
     this.newTutorial = this.newTutorial.bind(this);
 
@@ -14,7 +12,6 @@ export default class AddTutorial extends Component {
       title: "",
       description: "",
       published: false,
-
       submitted: false
     };
   }
@@ -34,25 +31,11 @@ export default class AddTutorial extends Component {
   componentDidMount() {
     Notification.requestPermission();
   }
-  onChangeTitle(e) {
-    this.setState({
-      title: e.target.value
-    });
-  }
-
-  onChangeDescription(e) {
-    this.setState({
-      description: e.target.value
-    });
-  }
-
   saveTutorial() {
     var data = {
       title: this.state.title,
       description: this.state.description
     };
-
-
 
     TutorialDataService.create(data)
       .then(response => {
@@ -101,7 +84,7 @@ export default class AddTutorial extends Component {
                 id="title"
                 required
                 value={this.state.title}
-                onChange={this.onChangeTitle}
+                onChange={event => this.setState({title: event.target.value})}
                 name="title"
               />
             </div>
@@ -114,7 +97,7 @@ export default class AddTutorial extends Component {
                 id="description"
                 required
                 value={this.state.description}
-                onChange={this.onChangeDescription}
+                onChange={event => this.setState({description:event.target.value})}
                 name="description"
               />
             </div>

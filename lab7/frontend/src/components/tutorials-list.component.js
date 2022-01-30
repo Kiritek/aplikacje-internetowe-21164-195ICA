@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import TutorialDataService from "../services/tutorial.service";
 import { Link } from "react-router-dom";
+import {NativeSelect } from "@mui/material";
 
 export default class TutorialsList extends Component {
   constructor(props) {
     super(props);
-    this.onChangeSearchTitle = this.onChangeSearchTitle.bind(this);
     this.retrieveTutorials = this.retrieveTutorials.bind(this);
     this.refreshList = this.refreshList.bind(this);
     this.setActiveTutorial = this.setActiveTutorial.bind(this);
@@ -16,20 +16,13 @@ export default class TutorialsList extends Component {
       tutorials: [],
       currentTutorial: null,
       currentIndex: -1,
-      searchTitle: ""
+      searchTitle: "",
+      searchCategory:""
     };
   }
 
   componentDidMount() {
     this.retrieveTutorials();
-  }
-
-  onChangeSearchTitle(e) {
-    const searchTitle = e.target.value;
-
-    this.setState({
-      searchTitle: searchTitle
-    });
   }
 
   retrieveTutorials() {
@@ -38,20 +31,18 @@ export default class TutorialsList extends Component {
         this.setState({
           tutorials: response.data
         });
-        console.log(response.data);
       })
       .catch(e => {
         console.log(e);
       });
   }
 
+
   refreshList() {
     this.retrieveTutorials();
-    this.setState({
-      currentTutorial: null,
-      currentIndex: -1
-    });
+    this.nullifySelection();
   }
+
 
   setActiveTutorial(tutorial, index) {
     this.setState({
@@ -71,18 +62,20 @@ export default class TutorialsList extends Component {
       });
   }
 
-  searchTitle() {
+  nullifySelection() {
     this.setState({
       currentTutorial: null,
       currentIndex: -1
     });
-
-    TutorialDataService.findByTitle(this.state.searchTitle)
+  }
+  searchTitle() {
+    this.nullifySelection();
+    console.log(this.state.searchCategory);
+    TutorialDataService.findByTitle(this.state.searchTitle,this.state.searchCategory)
       .then(response => {
         this.setState({
           tutorials: response.data
         });
-        console.log(response.data);
       })
       .catch(e => {
         console.log(e);
@@ -94,24 +87,37 @@ export default class TutorialsList extends Component {
 
     return (
       <div className="list row">
-        <div className="col-md-8">
+        <div className="col-md-10">
           <div className="input-group mb-3">
             <input
               type="text"
               className="form-control"
               placeholder="Search by title"
               value={searchTitle}
-              onChange={this.onChangeSearchTitle}
+              onChange={(event) => this.setState({ searchTitle: event.target.value })}
             />
+            <div className="input-group-append">
+              <NativeSelect
+                id="searchCategory"
+                value={this.searchCategory}
+                label="SearchCategory"
+                onChange={(event) => this.setState({ searchCategory: event.target.value })}
+              >
+                <option value={"Title"}>Title</option>
+                <option value={"Description"}>Description</option>
+              </NativeSelect>
+            </div>
             <div className="input-group-append">
               <button
                 className="btn btn-outline-secondary"
                 type="button"
                 onClick={this.searchTitle}
+                disabled={!this.state.searchTitle}
               >
                 Search
               </button>
             </div>
+
           </div>
         </div>
         <div className="col-md-6">

@@ -5,7 +5,7 @@ namespace CRUD_API2.Models
     public interface ITutorialRepository
     {
         IEnumerable<Tutorial> GetAll();
-        IEnumerable<Tutorial> GetSearch(string keyWord);
+        IEnumerable<Tutorial> GetSearch(string keyWord, string category);
         Tutorial GetTutorialById(int id);
         void AddTutorial(Tutorial tutorial);
         void EditTutorial(Tutorial tutorial);

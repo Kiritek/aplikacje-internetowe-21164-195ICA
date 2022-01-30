@@ -13,7 +13,7 @@ namespace CRUD_API2.Models
 
         public IEnumerable<Tutorial> GetAll() => _context.Tutorials.ToList();
 
-        public IEnumerable<Tutorial> GetSearch(string keyword)
+        public IEnumerable<Tutorial> GetSearch(string keyword,string category)
         {
             if (string.IsNullOrWhiteSpace(keyword))
             {
@@ -21,8 +21,19 @@ namespace CRUD_API2.Models
             }
             var collection = _context.Tutorials as IQueryable<Tutorial>;
             keyword = keyword.Trim();
-            collection = collection.Where(t=> t.Title.Contains(keyword));
+            if (category=="Title")
+            {
+                collection = collection.Where(t => t.Title.Contains(keyword));
+
+            }
+            else if (category == "Description")
+            {
+                collection = collection.Where(t => t.Description.Contains(keyword));
+
+            }
             return collection.ToList();
+
+
         }
 
         public void AddTutorial(Tutorial tutorial)
