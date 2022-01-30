@@ -39,3 +39,33 @@ Aplikacja powstała częściowo przy pomocy tutorialu https://www.bezkoder.com/d
 
 ### Widok listy po usunięciu wszystkich tutoriali
 ![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/usunieciewszystkich%20tutoriali.png)
+
+# Dodatkowe zmiany w aplikacji
+
+## Zmiana wyszukiwarki
+Dodałem opcje wybrania pomiędzy wyszukiwaniem po opisie lub po tytule. Teraz gdy pole wyszukiwania jest puste przycisk jest blokowany.
+
+### Wyszukiwanie po tytule 
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/wyszukiwaniepotytule.png)
+
+### Wyszukiwanie po opisie przy błędnych danych
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/wyszukiwaniepoopisie.png)
+
+### Wyszukiwanie po opisie przy poprawnych danych
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/wyszukiwaniepoopisie2.png)
+
+### Brak tekstu - przycisk zablokowany
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/wyszukiwanie%20bez%20tekstu.png)
+
+### Kod nowej funkcjonalności
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/dodanie%20funkcji%20do%20wyszukiwania.png)
+
+## Refaktoryzacja kodu
+W refaktoryzacji głownie zagnieżdzałem funkcje zmiany wartości stanu i gdy kod był używany przynajmniej dwukrotnie to przenosiłem go do osobnej funkcji w celu uproszczenia kodu i zwiększenia przejrzystości.
+
+### tutorial-list
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/tutorials-list.png)
+
+### add-tutorial
+![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/addtutorialzmiany.png)
+
