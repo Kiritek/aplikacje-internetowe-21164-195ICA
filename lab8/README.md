@@ -43,9 +43,6 @@ Frontend aplikacji zostal wykonany w reactie. Backend w postaci rest api został
 ### Dodanie priorytetu w formie
 ![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab8/assets/nowyform.png)
 
-### Dodatkowy kod w formie
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab8/assets/nowykodform.png)
-
 ### Ikonki priorytetów i ukończenia
 ![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab8/assets/priorityikonki.png)
 
