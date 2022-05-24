@@ -1,6 +1,3 @@
-## Aplikacja udostępiona jest pod następującym linkiem
-https://blog21164po.azurewebsites.net/
-
 # Lab 1
 
 ### Widok wszystkich postów przy niezalogowanym użytkowniku
