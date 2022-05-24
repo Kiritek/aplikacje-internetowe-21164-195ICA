@@ -1,6 +1,6 @@
 # Lab 7
 ## Aplikacje CRUD
-Aplikacja powstała częściowo przy pomocy tutorialu https://www.bezkoder.com/django-react-axios-rest-framework/. Backend aplikacji i powiadomienia we frontendzie do nieudanych akcji były wykonane przez mnie.
+Frontend aplikacji zostal wykonany w reactie. Backend w postaci rest api została wykonana w .net core 3.1.
 
 ### Widok dodanych wcześniej tutoriali
 ![nua](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/listatutoriali.png)
@@ -56,16 +56,4 @@ Dodałem opcje wybrania pomiędzy wyszukiwaniem po opisie lub po tytule. Teraz g
 
 ### Brak tekstu - przycisk zablokowany
 ![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/wyszukiwanie%20bez%20tekstu.png)
-
-### Kod nowej funkcjonalności
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/dodanie%20funkcji%20do%20wyszukiwania.png)
-
-## Refaktoryzacja kodu
-W refaktoryzacji głownie zagnieżdzałem funkcje zmiany wartości stanu i gdy kod był używany przynajmniej dwukrotnie to przenosiłem go do osobnej funkcji w celu uproszczenia kodu i zwiększenia przejrzystości.
-
-### tutorial-list
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/tutorials-list.png)
-
-### add-tutorial
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab7/assets/addtutorialzmiany.png)
 
