@@ -1,6 +1,6 @@
 # Lab 8
 ## Aplikacja ToDo
-Aplikacja powstała częściowo przy pomocy tutorialu https://www.digitalocean.com/community/tutorials/build-a-to-do-application-using-django-and-react. Backend aplikacji aplikacji jest napisany w pełni przezemnie w .net core 3.1. Frontend z tutoriala został przezemnie zmodyfikowany.
+Frontend aplikacji zostal wykonany w reactie. Backend w postaci rest api została wykonana w .net core 3.1.
 
 ### Widok aplikacji
 ![nua](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab8/assets/Todoapp.png)
@@ -53,8 +53,3 @@ Aplikacja powstała częściowo przy pomocy tutorialu https://www.digitalocean.c
 
 Ikonki wyświetlają się przy zakończonym tasku i przy niskim i wysokim priorytetcie.
 
-### Kod wyświetlania ikonek
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab8/assets/dodanie%20ikonek%20kod.png)
-
-### Refaktoryzacja jednej z funkcji
-![wl](https://github.com/Kiritek/aplikacje-internetowe-21164-195ICA/blob/main/lab8/assets/refaktoryzacja%20kodu.png)
